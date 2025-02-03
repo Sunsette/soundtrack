@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getTimeAgoText } from "../util/getTimeAgoText";
+import { getTimeAgoText } from "../util/getTimeAgoText.util";
 
 const TimeAgo: React.FC<{ pastDate: Date }> = ({ pastDate }) => {
   const [timeAgoText, setTimeAgoText] = useState<string>(
