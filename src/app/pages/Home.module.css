@@ -1,0 +1,85 @@
+.main {
+  width: 100%;
+}
+
+.history {
+  width: 100%;
+}
+
+.cover {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+.cover th {
+  height: auto;
+}
+
+th {
+  text-align: left;
+}
+
+.tools {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: Arial, sans-serif;
+}
+
+table thead {
+  background-color: #f2f2f2;
+}
+
+table thead th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-table {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table thead th,
+  table td {
+    padding: 8px;
+  }
+}
